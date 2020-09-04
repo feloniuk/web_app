@@ -9,21 +9,24 @@ class Profile(models.Model):
     nickname = models.CharField(max_length=124, unique=True, default=login)
 
     def __str__(self):
-        return f'nickname - {self.nickname}, id - {self.id}, password - {self.password}'
+        return f'{self.nickname}'
 
 
 class Publication(models.Model):
-    author = models.ManyToManyField(Profile)
+    author = models.ManyToManyField(Profile, related_name='author_p')
     description = models.CharField(max_length=255)
     release_date = models.DateTimeField(auto_now_add=True)
     publication = models.FileField(upload_to='media/')
 
     def __str__(self):
-        return f'author - {self.author}'
+        return f'{self.author.all()}'
 
 
 class Comment(models.Model):
-    author = models.ManyToManyField(Profile)
+    author = models.ForeignKey(Profile, related_name='author_c', verbose_name='author',
+                               on_delete=models.CASCADE)
+    publication = models.ForeignKey(Publication, related_name='publication_c', verbose_name='publication',
+                                    on_delete=models.CASCADE)
     comment = models.CharField(max_length=255)
     release_date = models.DateTimeField(auto_now_add=True)
 

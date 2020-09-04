@@ -4,7 +4,7 @@ from django.http.response import HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render
 
 from accounts.forms import ProfileAddForm, ProfileEditForm
-from accounts.models import Profile
+from accounts.models import Profile, Comment, Publication
 
 
 # Create your views here.
@@ -24,13 +24,30 @@ def get_profiles_list(request):
     )
 
 
+def get_publications_list(request):
+    publication = Publication.objects.all()
+    comment = Comment.objects.all()
+
+    return render(
+        request,
+        'publications.html',
+        context={
+            'publication': publication,
+            'comment': comment
+        }
+    )
+
+
 def get_profile(request, slug):
     profile = Profile.objects.get(id=slug)
+    comment = Comment.objects.get(author=slug)
+
     return render(
         request,
         'profile.html',
         context={
-            'profile': profile
+            'profile': profile,
+            'comment': comment
         }
     )
 
@@ -75,4 +92,3 @@ def edit_profile(request, slug):
             'form': form
         }
     )
-
