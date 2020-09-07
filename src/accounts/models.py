@@ -19,7 +19,7 @@ class Publication(models.Model):
     publication = models.FileField(upload_to='media/')
 
     def __str__(self):
-        return f'{self.author.all()}'
+        return '.join(author.login for author in self.author.all())'
 
 
 class Comment(models.Model):

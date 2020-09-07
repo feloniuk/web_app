@@ -1,4 +1,4 @@
-"""our_project URL Configuration
+"""app URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -17,7 +17,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from accounts import views
-from our_project import settings
+from app import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),

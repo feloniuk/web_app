@@ -40,14 +40,12 @@ def get_publications_list(request):
 
 def get_profile(request, slug):
     profile = Profile.objects.get(id=slug)
-    comment = Comment.objects.get(author=slug)
 
     return render(
         request,
         'profile.html',
         context={
-            'profile': profile,
-            'comment': comment
+            'profile': profile
         }
     )
 
