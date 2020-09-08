@@ -28,7 +28,7 @@ class ProfileCreateView(CreateView):
     form_class = ProfileAddForm
 
     def get_success_url(self):
-        return reverse('app:home')
+        return reverse('home')
 
 
 def get_profiles_list(request):

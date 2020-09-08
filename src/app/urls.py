@@ -20,6 +20,7 @@ from accounts import views
 from app import settings
 
 app_name = 'app'
+
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('publications/', views.get_publications_list),
