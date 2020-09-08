@@ -19,12 +19,13 @@ from django.urls import path
 from accounts import views
 from app import settings
 
+app_name = 'app'
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('publications/', views.get_publications_list),
-    path('profiles/', views.get_profiles_list),
-    path('profiles/add/', views.add_profile),
-    path('profiles/show/<slug>', views.get_profile),
-    path('profiles/edit/<slug>', views.edit_profile),
-    path('', views.get_profiles_list)
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+                  path('admin/', admin.site.urls),
+                  path('publications/', views.get_publications_list),
+                  path('profiles/', views.ProfilesListView.as_view()),
+                  path('profiles/add/', views.ProfileCreateView.as_view()),
+                  path('profiles/show/<slug>', views.get_profile),
+                  path('profiles/edit/<slug>', views.edit_profile),
+                  path('', views.get_publications_list, name='home')
+              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
