@@ -39,15 +39,22 @@ body {
     float: center;
 }
 
+.row h4 {
+  margin: 1px;
+}
+
 .row {
   margin-bottom: 15px;
 }
 
+
 .container {
+  position: relative;
   width: 100%;
+  border: solid 1px black;
   max-width: 900px;
   padding: 15px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .container:after {
@@ -96,3 +103,48 @@ body {
   float: left;
 }
 
+.wrapper-dropdown-5 {
+/* размер и позиция */
+position: relative;
+width: 200px;
+margin: 0 auto;
+padding: 12px 15px;
+
+/* стили */
+background: #fff;
+border-radius: 5px;
+box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+cursor: pointer;
+outline: none;
+transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-5:after { /* небольшая стрелка */
+content: "";
+width: 0;
+height: 0;
+position: absolute;
+top: 50%;
+right: 15px;
+margin-top: -3px;
+border-width: 6px 6px 0 6px;
+border-style: solid;
+border-color: #4cbeff transparent;
+}
+
+.wrapper-dropdown-5.active {
+border-radius: 5px 5px 0 0;
+background: #4cbeff;
+box-shadow: none;
+border-bottom: none;
+color: white;
+}
+
+.wrapper-dropdown-5.active:after {
+border-color: #82d1ff transparent;
+}
+
+.wrapper-dropdown-5.active .dropdown {
+border-bottom: 1px solid rgba(0,0,0,0.2);
+max-height: 400px;
+}
