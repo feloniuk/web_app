@@ -13,13 +13,14 @@ class Profile(models.Model):
 
 
 class Publication(models.Model):
-    author = models.ManyToManyField(Profile, related_name='author_p')
+    author = models.ForeignKey(Profile, on_delete=models.CASCADE,
+                               related_name='author_p')
     description = models.CharField(max_length=255)
     release_date = models.DateTimeField(auto_now_add=True)
     publication = models.FileField(upload_to='media/')
 
     def __str__(self):
-        return '.join(author.login for author in self.author.all())'
+        return f'author - {self.author}'
 
 
 class Comment(models.Model):
