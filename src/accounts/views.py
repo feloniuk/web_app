@@ -6,7 +6,7 @@ from django.urls import reverse
 from django.views.generic import ListView, CreateView
 
 from accounts.forms import ProfileAddForm, ProfileEditForm
-from accounts.models import Profile, Comment, Publication
+from accounts.models import Profile
 
 
 class ProfilesListView(ListView):
@@ -43,20 +43,6 @@ def get_profiles_list(request):
         context={
             'result': objects,
             'search': search
-        }
-    )
-
-
-def get_publications_list(request):
-    publication = Publication.objects.all()
-    comment = Comment.objects.all()
-
-    return render(
-        request,
-        'publications.html',
-        context={
-            'publication': publication,
-            'comment': comment
         }
     )
 

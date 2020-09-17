@@ -2,8 +2,8 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import render
 
-from accounts.forms import PublicationEditForm
-from accounts.models import Publication
+from .forms import PublicationEditForm
+from accounts.models import Publication, Comment
 
 
 def edit_publication(request, slug):
@@ -25,5 +25,19 @@ def edit_publication(request, slug):
         template_name='profile_edit.html',
         context={
             'form': form
+        }
+    )
+
+
+def get_publications_list(request):
+    publication = Publication.objects.all()
+    comment = Comment.objects.all()
+
+    return render(
+        request,
+        'publications.html',
+        context={
+            'publication': publication,
+            'comment': comment
         }
     )

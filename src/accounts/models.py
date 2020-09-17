@@ -2,6 +2,9 @@ from django.db import models
 
 
 # Create your models here.
+from publications.models import Publication
+
+
 class Profile(models.Model):
     id = models.AutoField(primary_key=True)
     login = models.CharField(max_length=255, unique=True)
@@ -10,17 +13,6 @@ class Profile(models.Model):
 
     def __str__(self):
         return f'{self.nickname}'
-
-
-class Publication(models.Model):
-    author = models.ForeignKey(Profile, on_delete=models.CASCADE,
-                               related_name='author_p')
-    description = models.CharField(max_length=255)
-    release_date = models.DateTimeField(auto_now_add=True)
-    publication = models.FileField(upload_to='media/')
-
-    def __str__(self):
-        return f'author - {self.author}'
 
 
 class Comment(models.Model):
