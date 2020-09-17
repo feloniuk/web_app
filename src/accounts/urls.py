@@ -6,7 +6,6 @@ app_name = 'accounts'
 urlpatterns = [
     path('', get_profiles_list, name='list'),
     path('add/', add_profile, name='add'),
-    path('show/<id>', get_profile, name='show'),
-    path('profiles/show/<slug>', get_profile),
+    path('show/<slug>', get_profile, name='show'),
     path('profiles/edit/<slug>', edit_profile),
 ]

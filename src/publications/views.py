@@ -2,7 +2,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import render
 
-from .forms import PublicationEditForm
+from .forms import PublicationEditForm, PublicationAddForm
 from accounts.models import Publication, Comment
 
 
@@ -39,5 +39,24 @@ def get_publications_list(request):
         context={
             'publication': publication,
             'comment': comment
+        }
+    )
+
+
+def add_publication(request):
+    if request.method == 'POST':
+        form = PublicationAddForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/publications')
+
+    elif request.method == 'GET':
+        form = PublicationAddForm()
+
+    return render(
+        request,
+        template_name='publication_add.html',
+        context={
+            'form': form
         }
     )

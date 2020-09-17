@@ -11,3 +11,7 @@ class PublicationBaseForm(ModelForm):
 
 class PublicationEditForm(PublicationBaseForm):
     pass
+
+
+class PublicationAddForm(PublicationBaseForm):
+    pass
