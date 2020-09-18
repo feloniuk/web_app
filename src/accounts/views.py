@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Q
 from django.http.response import HttpResponseRedirect, HttpResponseNotFound
@@ -22,7 +23,7 @@ class ProfilesListView(ListView):
         return qs
 
 
-class ProfileCreateView(CreateView):
+class ProfileCreateView(CreateView, LoginRequiredMixin):
     model = Profile
     template_name = 'profile_add.html'
     form_class = ProfileAddForm

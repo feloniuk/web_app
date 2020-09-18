@@ -15,14 +15,14 @@ def edit_publication(request, slug):
         form = PublicationEditForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(f'/profiles/show/{slug}')
+            return HttpResponseRedirect(f'/publications/show/{slug}')
 
     elif request.method == 'GET':
         form = PublicationEditForm(instance=profile)
 
     return render(
         request,
-        template_name='profile_edit.html',
+        template_name='publications_edit.html',
         context={
             'form': form
         }
