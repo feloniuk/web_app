@@ -1,4 +1,4 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Q
 from django.http.response import HttpResponseRedirect, HttpResponseNotFound
@@ -23,10 +23,11 @@ class ProfilesListView(ListView):
         return qs
 
 
-class ProfileCreateView(CreateView, LoginRequiredMixin):
+class ProfileCreateView(PermissionRequiredMixin, CreateView):
     model = Profile
     template_name = 'profile_add.html'
     form_class = ProfileAddForm
+    permission_required = 'accounts.add_profile'
 
     def get_success_url(self):
         return reverse('home')
