@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.auth.models import User
 from django.db.models import Q
 from django.http.response import HttpResponseRedirect
 from django.urls import reverse
@@ -61,7 +62,7 @@ class ProfileEditView(LoginRequiredMixin, UpdateView):
 
 
 class ProfileDeleteView(LoginRequiredMixin, DeleteView):
-    model = Profile
+    model = User
     template_name = 'profile_add.html'
     success_url = '/profiles/'
     success_msg = 'Successful deleted'
@@ -72,8 +73,8 @@ class ProfileDeleteView(LoginRequiredMixin, DeleteView):
         return super().post(request)
 
     def delete(self, request, *args, **kwargs):
-        self.object = self.get_object()
-        if self.request.user != self.object.user \
+        self.object = User.get_object()
+        if self.request.user != self.object \
                 and not (self.request.user.groups.filter(name='admin_application').exists()):
             return self.handle_no_permission()
         success_url = self.get_success_url()
