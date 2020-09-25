@@ -6,7 +6,8 @@ from accounts.models import Profile
 class ProfileBaseForm(ModelForm):
     class Meta:
         model = Profile
-        fields = '__all__'
+        fields = ('bio', 'location', 'birth_date', 'nickname')
+        # fields = '__all__'
 
 
 class ProfileAddForm(ProfileBaseForm):
