@@ -79,7 +79,8 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'user',
         'PASSWORD': 'pass',
-        'HOST': '127.0.0.1',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
@@ -124,3 +125,7 @@ STATICFILES_DIRS = [
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/media/'
+
+LOGIN_REDIRECT_URL = '/profiles/'
+
+ADMIN_GROUP = 'admin_application1'

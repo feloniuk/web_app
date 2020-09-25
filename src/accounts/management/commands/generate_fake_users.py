@@ -18,7 +18,6 @@ class Command(BaseCommand):
         group = Group(name=settings.ADMIN_GROUP)
         group.save()
         for _ in range(options["count"][0]):
-
             user = User.objects.create_user(
                 username=f.user_name(),
                 email=f.email(),

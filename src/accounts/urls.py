@@ -1,11 +1,13 @@
 from django.urls import path
-from accounts.views import get_profiles_list, get_profile, add_profile, edit_profile
 
-app_name = 'accounts'
+from accounts.views import ProfilesListView, ProfileCreateView, ProfileDetailView, ProfileEditView, ProfileDeleteView
+
+app_name = "profiles"
 
 urlpatterns = [
-    path('', get_profiles_list, name='list'),
-    path('add/', add_profile, name='add'),
-    path('show/<slug>', get_profile, name='show'),
-    path('profiles/edit/<slug>', edit_profile),
+    path('', ProfilesListView.as_view(), name='list'),
+    path('add/', ProfileCreateView.as_view(), name='add'),
+    path('edit/<item_id>', ProfileEditView.as_view(), name='edit'),
+    path('show/<item_id>', ProfileDetailView.as_view(), name='show'),
+    path('delete/<item_id>', ProfileDeleteView.as_view(), name='delete'),
 ]
