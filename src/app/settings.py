@@ -37,10 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'publications',
+    'core',
     'django_extensions'
 ]
 
 MIDDLEWARE = [
+    'core.middlewares.PerformanceMonitoringMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -129,3 +131,4 @@ MEDIA_URL = '/media/'
 LOGIN_REDIRECT_URL = '/profiles/'
 
 ADMIN_GROUP = 'admin_application1'
+MAX_RESPONSE_TIME = 2  # in seconds

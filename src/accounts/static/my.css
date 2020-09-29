@@ -55,6 +55,7 @@ body {
 }
 
 .row-com h4 {
+  position: relative;
   max-width: 200px;
   margin: 5px;
   margin: auto;
