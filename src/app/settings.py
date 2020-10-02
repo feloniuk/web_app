@@ -132,3 +132,4 @@ LOGIN_REDIRECT_URL = '/profiles/'
 
 ADMIN_GROUP = 'admin_application1'
 MAX_RESPONSE_TIME = 2  # in seconds
+LOG_RECORDS_COUNT = 20

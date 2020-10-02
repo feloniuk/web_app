@@ -17,19 +17,16 @@ class PerformanceMonitoringMiddleware:
         pr.enable()
         response = self.get_response(request)
         pr.disable()
-        s = StringIO()
-        ps = pstats.Stats(pr, stream=s).sort_stats('cumulative')
-        ps.print_stats()
         finish = perf_counter()
 
         if finish - start > settings.MAX_RESPONSE_TIME:
+            s = StringIO()
+            ps = pstats.Stats(pr, stream=s).sort_stats('cumulative')
+            ps.print_stats(settings.LOG_RECORDS_COUNT)
             with open(f'{datetime.today().strftime("%Y-%m%-%d")}_performance', 'a') as f:
                 f.write(f'URI: {request.path} \n')
                 f.write(f'DEBUG INFO: {s.getvalue()} \n')
                 f.write('_' * 20 + '\n')
                 pass
-
-        # Code to be executed for each request/response after
-        # the view is called.
 
         return response
