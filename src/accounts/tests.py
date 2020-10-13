@@ -23,5 +23,9 @@ class AccountsTestCase(TestCase):
         profile = Profile.object.get(user_id=user.id)
         self.assertEqual(profile.nickname, email)
 
+    def test_profile_age(self):
+
+        pass
+
     def tearDown(self) -> None:
         pass
