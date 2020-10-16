@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'accounts',
     'publications',
     'core',
+    'gunicorn',
     'django_extensions'
 ]
 
@@ -81,7 +82,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'user',
         'PASSWORD': 'pass',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432'
     }
 }
