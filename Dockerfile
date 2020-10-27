@@ -1,7 +1,7 @@
 FROM python:3.8
-ENV PYTHONUNBUFFERED 1
-RUN mkdir /zeroten_skaner
-WORKDIR /zeroten_skaner
-ADD requirements.txt /zeroten_skaner/
+WORKDIR /app
+COPY ./requirements.txt /app
 RUN pip install -r requirements.txt
-ADD . /zeroten_skaner/
+COPY . /app
+WORKDIR /app/src
+CMD gunicorn app.wsgi:application --bind 0.0.0.0:8000
