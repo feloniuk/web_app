@@ -3,8 +3,6 @@ version: "3"
 services:
   app:
     build: .
-    links:
-      - db:db
     volumes:
     - ./app:/usr/src/app
     ports:
@@ -18,8 +16,6 @@ services:
 
   db:
     image: "postgres:10"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
     env_file:
       - .env
 

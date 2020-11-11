@@ -1,0 +1,51 @@
+INFO 2020-11-11 17:50:43,848 autoreload 13724 14016 Watching for file changes with StatReloader
+INFO 2020-11-11 17:56:32,685 autoreload 13724 14016 C:\Users\s-fel\Desktop\web_app\src\app\settings.py changed, reloading.
+INFO 2020-11-11 17:56:34,078 autoreload 9012 13912 Watching for file changes with StatReloader
+INFO 2020-11-11 18:01:26,535 autoreload 9012 13912 C:\Users\s-fel\Desktop\web_app\src\app\settings.py changed, reloading.
+INFO 2020-11-11 18:01:27,753 autoreload 12596 7080 Watching for file changes with StatReloader
+INFO 2020-11-11 18:01:57,908 autoreload 12596 7080 C:\Users\s-fel\Desktop\web_app\src\app\settings.py changed, reloading.
+INFO 2020-11-11 18:01:59,028 autoreload 12124 3260 Watching for file changes with StatReloader
+INFO 2020-11-11 18:05:24,904 autoreload 12124 3260 C:\Users\s-fel\Desktop\web_app\src\app\settings.py changed, reloading.
+INFO 2020-11-11 18:05:26,021 autoreload 13648 7036 Watching for file changes with StatReloader
+ERROR 2020-11-11 18:07:03,238 basehttp 13648 12708 "GET / HTTP/1.1" 500 59
+ERROR 2020-11-11 18:07:03,409 basehttp 13648 12708 "GET /favicon.ico HTTP/1.1" 500 59
+ERROR 2020-11-11 18:07:03,915 basehttp 13648 12708 "GET / HTTP/1.1" 500 59
+ERROR 2020-11-11 18:07:04,069 basehttp 13648 12708 "GET /favicon.ico HTTP/1.1" 500 59
+INFO 2020-11-11 18:07:22,286 autoreload 8252 6816 Watching for file changes with StatReloader
+ERROR 2020-11-11 18:07:23,170 basehttp 8252 144 "GET / HTTP/1.1" 500 59
+ERROR 2020-11-11 18:07:23,322 basehttp 8252 144 "GET /favicon.ico HTTP/1.1" 500 59
+ERROR 2020-11-11 18:07:25,100 basehttp 8252 144 "GET /admin/ HTTP/1.1" 500 59
+ERROR 2020-11-11 18:07:25,646 basehttp 8252 144 "GET /favicon.ico HTTP/1.1" 500 59
+INFO 2020-11-11 18:08:54,963 autoreload 8252 6816 C:\Users\s-fel\Desktop\web_app\src\app\settings.py changed, reloading.
+INFO 2020-11-11 18:08:56,370 autoreload 13000 1684 Watching for file changes with StatReloader
+INFO 2020-11-11 18:08:59,971 basehttp 13000 12988 "GET /admin/ HTTP/1.1" 302 0
+INFO 2020-11-11 18:09:00,047 basehttp 13000 12988 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2194
+INFO 2020-11-11 18:09:01,458 basehttp 13000 8624 "GET /static/admin/css/login.css HTTP/1.1" 200 1185
+INFO 2020-11-11 18:09:01,471 basehttp 13000 12812 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+INFO 2020-11-11 18:09:01,476 basehttp 13000 848 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18339
+INFO 2020-11-11 18:09:01,487 basehttp 13000 1400 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2020-11-11 18:09:01,490 basehttp 13000 12988 "GET /static/admin/css/base.css HTTP/1.1" 200 16307
+INFO 2020-11-11 18:09:01,553 basehttp 13000 12988 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2020-11-11 18:09:01,599 basehttp 13000 12988 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2020-11-11 18:09:01,617 basehttp 13000 1400 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+WARNING 2020-11-11 18:09:01,699 log 13000 1400 Not Found: /favicon.ico
+WARNING 2020-11-11 18:09:01,700 basehttp 13000 1400 "GET /favicon.ico HTTP/1.1" 404 3311
+INFO 2020-11-11 18:09:04,727 basehttp 13000 1400 "GET / HTTP/1.1" 200 4973
+INFO 2020-11-11 19:12:51,455 basehttp 13000 4408 "GET / HTTP/1.1" 200 4973
+INFO 2020-11-11 19:12:51,557 basehttp 13000 4408 "GET /static/my.css HTTP/1.1" 200 2295
+INFO 2020-11-11 19:12:51,558 basehttp 13000 6856 "GET /static/img/logo.png HTTP/1.1" 200 13703
+WARNING 2020-11-11 19:12:51,692 log 13000 6856 Not Found: /favicon.ico
+WARNING 2020-11-11 19:12:51,693 basehttp 13000 6856 "GET /favicon.ico HTTP/1.1" 404 3311
+INFO 2020-11-11 19:13:47,692 basehttp 13000 6856 "GET / HTTP/1.1" 200 5046
+INFO 2020-11-11 19:13:47,781 basehttp 13000 6856 "GET /static/my.css HTTP/1.1" 200 2295
+INFO 2020-11-11 19:13:47,782 basehttp 13000 4408 "GET /static/img/logo.png HTTP/1.1" 200 13703
+WARNING 2020-11-11 19:13:47,860 log 13000 4408 Not Found: /favicon.ico
+WARNING 2020-11-11 19:13:47,861 basehttp 13000 4408 "GET /favicon.ico HTTP/1.1" 404 3311
+WARNING 2020-11-11 19:13:49,359 log 13000 4408 Not Found: /account/login
+WARNING 2020-11-11 19:13:49,360 basehttp 13000 4408 "GET /account/login HTTP/1.1" 404 3317
+INFO 2020-11-11 19:16:01,224 autoreload 13000 1684 C:\Users\s-fel\Desktop\web_app\src\accounts\views.py changed, reloading.
+INFO 2020-11-11 19:16:02,535 autoreload 4308 9348 Watching for file changes with StatReloader
+INFO 2020-11-11 20:52:36,888 autoreload 1340 14884 Watching for file changes with StatReloader
+INFO 2020-11-11 20:52:41,103 basehttp 4308 15300 "GET / HTTP/1.1" 200 5046
+WARNING 2020-11-11 20:52:43,390 log 4308 15300 Not Found: /account/login
+WARNING 2020-11-11 20:52:43,390 basehttp 4308 15300 "GET /account/login HTTP/1.1" 404 3317

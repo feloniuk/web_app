@@ -18,9 +18,9 @@ class ProfilesListView(ListView):
 
     def get_queryset(self):
         qs = super().get_queryset()
-        search = self.request.GET.get('search')
+        search = self.request.GET.get("search")
         if search:
-            qs = qs.filter(Q(nickname__icontains=search) | Q(login__icontains=search))
+            qs = qs.filter(Q(nickname__icontains=search) | Q(user__username__icontains=search))
         return qs
 
 
@@ -30,8 +30,14 @@ class ProfileCreateView(PermissionRequiredMixin, CreateView):
     form_class = ProfileAddForm
     permission_required = ('accounts.add_profile',)
 
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        self.object.user = self.request.user
+        self.object.save()
+        return super().form_valid(form)
+
     def get_success_url(self):
-        return reverse('home')
+        return reverse('profiles:list')
 
 
 class ProfileDetailView(DetailView):

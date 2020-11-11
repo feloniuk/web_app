@@ -1,0 +1,198 @@
+TIME: 17:40:16.964937 
+URI: / 
+METHOD: GET
+DEBUG INFO:          47821 function calls (46652 primitive calls) in 0.092 seconds
+
+   Ordered by: cumulative time
+   List reduced from 815 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      8/1    0.000    0.000    0.092    0.092 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py:44(inner)
+      7/1    0.000    0.000    0.092    0.092 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\deprecation.py:107(__call__)
+        1    0.000    0.000    0.080    0.080 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py:158(_get_response)
+        1    0.000    0.000    0.079    0.079 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\response.py:96(render)
+        1    0.000    0.000    0.079    0.079 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\response.py:72(rendered_content)
+        1    0.000    0.000    0.064    0.064 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py:58(render)
+        1    0.000    0.000    0.064    0.064 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:164(render)
+      2/1    0.000    0.000    0.060    0.060 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:161(_render)
+      3/1    0.000    0.000    0.060    0.060 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:934(render)
+    163/1    0.000    0.000    0.060    0.060 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:897(render_annotated)
+        1    0.000    0.000    0.060    0.060 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py:126(render)
+        1    0.000    0.000    0.037    0.037 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py:48(render)
+        1    0.000    0.000    0.037    0.037 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py:157(render)
+       43    0.001    0.000    0.033    0.001 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py:430(render)
+       43    0.001    0.000    0.031    0.001 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py:28(reverse)
+2057/1833    0.000    0.000    0.021    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.021    0.021 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py:268(__len__)
+        2    0.000    0.000    0.021    0.010 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py:1306(_fetch_all)
+       22    0.000    0.000    0.021    0.001 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py:47(__iter__)
+     15/3    0.002    0.000    0.020    0.007 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py:443(_populate)
+
+
+ 
+--------------------
+TIME: 17:40:17.130939 
+URI: /favicon.ico 
+METHOD: GET
+DEBUG INFO:          10894 function calls (10178 primitive calls) in 0.019 seconds
+
+   Ordered by: cumulative time
+   List reduced from 374 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      8/1    0.000    0.000    0.019    0.019 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py:44(inner)
+      7/1    0.000    0.000    0.019    0.019 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\deprecation.py:107(__call__)
+        1    0.000    0.000    0.017    0.017 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py:54(response_for_exception)
+        1    0.000    0.000    0.017    0.017 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:462(technical_404_response)
+        1    0.000    0.000    0.011    0.011 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:108(get_safe_settings)
+  879/776    0.001    0.000    0.006    0.000 {built-in method builtins.getattr}
+  523/151    0.002    0.000    0.005    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:83(cleanse_setting)
+        1    0.000    0.000    0.005    0.005 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\conf\__init__.py:144(PASSWORD_RESET_TIMEOUT_DAYS)
+        1    0.000    0.000    0.005    0.005 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\traceback.py:200(extract_stack)
+        1    0.000    0.000    0.005    0.005 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\traceback.py:321(extract)
+       34    0.000    0.000    0.004    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\traceback.py:285(line)
+       33    0.000    0.000    0.004    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\linecache.py:26(getline)
+       33    0.000    0.000    0.004    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\linecache.py:36(getlines)
+        8    0.000    0.000    0.004    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\linecache.py:80(updatecache)
+    27/25    0.000    0.000    0.003    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:94(<listcomp>)
+        1    0.000    0.000    0.003    0.003 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:164(render)
+        1    0.000    0.000    0.003    0.003 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:161(_render)
+      8/1    0.000    0.000    0.003    0.003 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:934(render)
+   141/11    0.000    0.000    0.002    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:897(render_annotated)
+        1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py:131(from_string)
+
+
+ 
+--------------------
+TIME: 17:40:41.644844 
+URI: / 
+METHOD: GET
+DEBUG INFO:          47823 function calls (46654 primitive calls) in 0.095 seconds
+
+   Ordered by: cumulative time
+   List reduced from 815 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      8/1    0.000    0.000    0.095    0.095 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py:44(inner)
+      7/1    0.000    0.000    0.095    0.095 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\deprecation.py:107(__call__)
+        1    0.000    0.000    0.080    0.080 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py:158(_get_response)
+        1    0.000    0.000    0.079    0.079 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\response.py:96(render)
+        1    0.000    0.000    0.079    0.079 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\response.py:72(rendered_content)
+        1    0.000    0.000    0.063    0.063 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py:58(render)
+        1    0.000    0.000    0.063    0.063 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:164(render)
+      2/1    0.000    0.000    0.059    0.059 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:161(_render)
+      3/1    0.000    0.000    0.059    0.059 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:934(render)
+    163/1    0.000    0.000    0.059    0.059 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:897(render_annotated)
+        1    0.000    0.000    0.059    0.059 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py:126(render)
+        1    0.000    0.000    0.035    0.035 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py:48(render)
+        1    0.000    0.000    0.035    0.035 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py:157(render)
+       43    0.001    0.000    0.034    0.001 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py:430(render)
+       43    0.001    0.000    0.032    0.001 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py:28(reverse)
+     15/3    0.002    0.000    0.021    0.007 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py:443(_populate)
+    19/13    0.000    0.000    0.021    0.002 <frozen importlib._bootstrap>:1002(_find_and_load)
+     14/8    0.000    0.000    0.020    0.003 <frozen importlib._bootstrap>:967(_find_and_load_unlocked)
+2057/1833    0.000    0.000    0.020    0.000 {built-in method builtins.len}
+       12    0.000    0.000    0.020    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\importlib\__init__.py:109(import_module)
+
+
+ 
+--------------------
+TIME: 17:40:41.801848 
+URI: /favicon.ico 
+METHOD: GET
+DEBUG INFO:          10894 function calls (10178 primitive calls) in 0.018 seconds
+
+   Ordered by: cumulative time
+   List reduced from 374 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      8/1    0.000    0.000    0.018    0.018 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py:44(inner)
+      7/1    0.000    0.000    0.018    0.018 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\deprecation.py:107(__call__)
+        1    0.000    0.000    0.017    0.017 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py:54(response_for_exception)
+        1    0.000    0.000    0.017    0.017 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:462(technical_404_response)
+        1    0.000    0.000    0.011    0.011 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:108(get_safe_settings)
+  879/776    0.001    0.000    0.006    0.000 {built-in method builtins.getattr}
+  523/151    0.002    0.000    0.005    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:83(cleanse_setting)
+        1    0.000    0.000    0.005    0.005 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\conf\__init__.py:144(PASSWORD_RESET_TIMEOUT_DAYS)
+        1    0.000    0.000    0.005    0.005 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\traceback.py:200(extract_stack)
+        1    0.000    0.000    0.005    0.005 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\traceback.py:321(extract)
+       34    0.000    0.000    0.004    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\traceback.py:285(line)
+       33    0.000    0.000    0.004    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\linecache.py:26(getline)
+       33    0.000    0.000    0.004    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\linecache.py:36(getlines)
+        8    0.000    0.000    0.004    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\linecache.py:80(updatecache)
+        1    0.000    0.000    0.003    0.003 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:164(render)
+    27/25    0.000    0.000    0.003    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:94(<listcomp>)
+        1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:161(_render)
+      8/1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:934(render)
+   141/11    0.000    0.000    0.002    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:897(render_annotated)
+        1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py:131(from_string)
+
+
+ 
+--------------------
+TIME: 17:41:35.249783 
+URI: / 
+METHOD: GET
+DEBUG INFO:          12533 function calls (12007 primitive calls) in 0.062 seconds
+
+   Ordered by: cumulative time
+   List reduced from 549 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      8/1    0.000    0.000    0.062    0.062 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py:44(inner)
+      7/1    0.000    0.000    0.062    0.062 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\deprecation.py:107(__call__)
+        1    0.000    0.000    0.061    0.061 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py:158(_get_response)
+        1    0.000    0.000    0.061    0.061 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\response.py:96(render)
+        1    0.000    0.000    0.061    0.061 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\response.py:72(rendered_content)
+        1    0.000    0.000    0.059    0.059 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py:58(render)
+        1    0.000    0.000    0.059    0.059 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:164(render)
+      2/1    0.000    0.000    0.058    0.058 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:161(_render)
+      3/1    0.000    0.000    0.058    0.058 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:934(render)
+    163/1    0.000    0.000    0.058    0.058 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:897(render_annotated)
+        1    0.000    0.000    0.058    0.058 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py:126(render)
+        1    0.000    0.000    0.056    0.056 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py:48(render)
+        1    0.000    0.000    0.056    0.056 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py:157(render)
+  386/298    0.000    0.000    0.044    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.044    0.044 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py:268(__len__)
+        2    0.000    0.000    0.044    0.022 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py:1306(_fetch_all)
+       22    0.000    0.000    0.044    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py:47(__iter__)
+        1    0.000    0.000    0.043    0.043 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py:1128(execute_sql)
+      7/1    0.000    0.000    0.028    0.028 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\asyncio.py:14(inner)
+        1    0.000    0.000    0.028    0.028 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\base\base.py:256(cursor)
+
+
+ 
+--------------------
+TIME: 17:41:35.392783 
+URI: /favicon.ico 
+METHOD: GET
+DEBUG INFO:          9784 function calls (9181 primitive calls) in 0.014 seconds
+
+   Ordered by: cumulative time
+   List reduced from 325 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      8/1    0.000    0.000    0.014    0.014 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py:44(inner)
+      7/1    0.000    0.000    0.014    0.014 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\deprecation.py:107(__call__)
+        1    0.000    0.000    0.012    0.012 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py:54(response_for_exception)
+        1    0.000    0.000    0.012    0.012 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:462(technical_404_response)
+        1    0.000    0.000    0.006    0.006 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:108(get_safe_settings)
+  523/151    0.002    0.000    0.004    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:83(cleanse_setting)
+        1    0.000    0.000    0.003    0.003 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:164(render)
+        1    0.000    0.000    0.003    0.003 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:161(_render)
+      8/1    0.000    0.000    0.003    0.003 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:934(render)
+   141/11    0.000    0.000    0.003    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:897(render_annotated)
+     18/2    0.000    0.000    0.003    0.001 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py:300(render)
+    27/25    0.000    0.000    0.003    0.000 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\debug.py:94(<listcomp>)
+     11/1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py:157(render)
+  783/774    0.000    0.000    0.002    0.000 {built-in method builtins.getattr}
+        1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py:131(from_string)
+        1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:141(__init__)
+        1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py:174(compile_nodelist)
+        1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\site-packages\django\conf\__init__.py:144(PASSWORD_RESET_TIMEOUT_DAYS)
+        1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\traceback.py:200(extract_stack)
+        1    0.000    0.000    0.002    0.002 C:\Users\s-fel\AppData\Local\Programs\Python\Python39\lib\traceback.py:321(extract)
+
+
+ 
+--------------------

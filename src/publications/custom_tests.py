@@ -35,7 +35,7 @@ class ReportBuilder:
         sftp_resp = MySFFTPClient().read_file(file_name)
         if sftp_resp != MySFFTPClient.succeed_exit_code:
             if self.check_qc(sftp_resp.content):
-                with open('tmp/report_file', 'w') as f:
+                with open('report_file', 'w') as f:
                     f.write(self.build_report(sftp_resp.content))
 
 
